@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url('images/img3.jpg');
+    background-size: cover;
+    background-position: fixed;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+}
+
+#logo{
+    position: relative;
+    font-size: 1.5em;
+    max-width: 400px;
+    margin-left: 10px;
+}
+header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .navigation li{
+    list-style: none;
+    margin: 0 10px;
+    display: flex;
+    float: right;
+    
+}
+header .navigation li a{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+header .navigation li a:hover{
+    color: black;
+}
+.banner{
+    padding: 200px 100px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.banner .content{
+    max-width: 700px;
+}
+.banner .content h1{
+    font-size: 2em;
+}
+.banner .content h2{
+    font-size: 1em;
+}
+
+
+
+@media (max-width:991px)
+{
+ header
+ {
+     padding: 10px 20px;
+     flex-direction: column;
+ }
+ .banner
+ {
+    padding:150px 20px 50px ;
+    flex-direction: column;
+ }
+}
+@media(max-width:600px)
+{
+    #logo
+    {
+    margin-left: 0;
+    max-width: 80%;
+    margin-top: 30px;
+    }
+    
+    .banner 
+    {
+        font-size: .7em;
+        text-align: center;
+    }
+    
+}
+/*--------------------------------DISTRICT-----------------*/
+
+.place{
+    float: left;
+}
