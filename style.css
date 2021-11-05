@@ -4,10 +4,8 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-body{
-    background-image: url('images/img3.jpg');
-    background-size: cover;
-    background-position: fixed;
+body header{
+   
 }
 header{
     position: absolute;
@@ -20,6 +18,15 @@ header{
     padding: 15px 100px;
     z-index: 10;
 }
+body section{
+    background-image: url(image/kerala2.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+body marquee{
+
+    z-index: 25;
+}
 
 #logo{
     position: relative;
@@ -27,18 +34,18 @@ header{
     max-width: 400px;
     margin-left: 10px;
 }
-header .navigation{
+header .navigation .navi{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 header .navigation li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 5px;
     display: flex;
-    float: right;
+    float: left;
     
 }
 header .navigation li a{
@@ -50,16 +57,20 @@ header .navigation li a{
 header .navigation li a:hover{
     color: black;
 }
+
 .banner{
+    position: relative;
     padding: 200px 100px 100px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    
+    z-index: 100;
 }
 .banner .content{
     max-width: 700px;
+    color: white;
 }
 .banner .content h1{
     font-size: 2em;
@@ -68,9 +79,34 @@ header .navigation li a:hover{
     font-size: 1em;
 }
 
+.gall{
+    padding: 80px 0;
+    margin-top: -9%;
+    text-align: center;
+    background-color: 
+    z-index:20;
+}
+.gall img{
+    padding: 15px;
+    width:100%;
+    box-shadow: 0 0 15px rgba(233, 227, 226, 0.3);
+    cursor:pointer;
+    
+}
+
+.title{
+    margin-top:2%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.intro{
+    background-color: white;
+    color: black;
+}
 
 
-@media (max-width:991px)
+
+@media (max-width:791px)
 {
  header
  {
@@ -101,6 +137,214 @@ header .navigation li a:hover{
 }
 /*--------------------------------DISTRICT-----------------*/
 
-.place{
-    float: left;
+img{
+    max-width: 100%;
 }
+
+.gallery{
+    padding: 80px 0;
+    margin-top: 5%;
+    background-image: url("image/kerala9.jpg");
+    background-size: cover;
+}
+.gallery img{
+    padding: 15px;
+    width:100%;
+    box-shadow: 0 0 15px rgba(223, 66, 27, 0.3);
+    cursor:pointer;
+    
+}
+
+.place{
+    background-image: url("image/kerala9.jpg");
+    background-size: cover;
+    
+}
+.places{
+    background-image: url("image/kerala9.jpg");
+    background-size: cover;
+}
+
+
+/*--------------------------------------------------TVM-------------------------------------------------*/
+
+.flip-card {
+    background-color: transparent;
+    width: 25vw;
+    height: 40vh;
+    margin-top: 8%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+ .ab{
+      display: flex;
+      float: left;
+      justify-content: space-around;
+      margin: 2%;
+  }
+  @media(max-width:991px){
+      .gallery h4{
+          font-size: 15px;
+      }
+    .flip-card{
+        flex-direction: column;
+        width:25vw;
+        height: 40vh;
+        margin: 8%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        text-align: center;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .flip-card-front, .flip-card-back{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        text-align: center;
+  }
+
+    }
+  
+  @media(max-width:600px){
+    .gallery h4{
+        font-size: 15px;
+    }
+    .flip-card{
+        flex-direction: column;
+        width:40vw;
+        height: 42..08vh;
+        margin: 10%;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        backface-visibility: hidden;
+    }
+    .flip-card-front, .flip-card-back{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+        text-align: center;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+  }
+    }
+  /* Clear floats after image containers */
+  
+  /*-------------------------------------------------hill tourism--------------------------------------*/
+  .container{
+      margin: 7%;
+      width:75%;
+      justify-content: center;
+     
+  }
+  .hill_tou{
+    background-image: url("image/kerala9.jpg");
+    background-size: cover;
+  }
+  .hill_tou p{
+      width: 65%;
+  }
+  .hill h2{
+      text-align: center;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+
+  /*---------------------------------------------------login-------------------------------------------*/
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+
+  /*----------------------------------------------signup------------------------------------------*/
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f093fb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+  }
+  
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+    top: 13px;
+  }
